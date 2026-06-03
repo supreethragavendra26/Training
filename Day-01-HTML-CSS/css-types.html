@@ -1,0 +1,35 @@
+<!--
+Create three headings:
+
+One styled with Inline CSS
+One styled with Internal CSS
+One styled with External CSS
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      h2 {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Inline CSS -->
+    <h1 style="background-color: aqua">Heading 1</h1>
+    <!-- External CSS -->
+    <h1>Heading 2</h1>
+    <!-- Internal CSS -->
+    <h2>Heading 3</h2>
+  </body>
+</html>
