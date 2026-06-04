@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .redcircle {
+        width: 50px;
+        height: 70px;
+        background-color: rgb(255, 251, 0);
+        border-radius: 50%;
+        position: absolute;
+        top: 71px;
+        left: 10px;
+        border: 2px solid black;
+      }
+
+      .redcircle2 {
+        width: 50px;
+        height: 70px;
+        background-color: rgb(255, 251, 0);
+        border-radius: 50%;
+        position: absolute;
+        top: 71px;
+        right: 10px;
+        border: 2px solid black;
+        transform: rotateY(150deg);
+      }
+      .blue-box {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        top: 20px;
+        left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blue-box">
+      <div class="redcircle"></div>
+      <div class="redcircle2"></div>
+    </div>
+  </body>
+</html>
