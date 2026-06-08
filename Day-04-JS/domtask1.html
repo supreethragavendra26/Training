@@ -1,0 +1,39 @@
+<!-- 
+ 5. Quick Practice Exercises
+
+Exercise 1 (5 min)
+Create a heading in HTML and use JavaScript to:
+
+Select the heading
+Change its text to "DOM Practice"
+
+Exercise 2 (5 min)
+Create a button and:
+
+Add a click event
+When clicked, change the page background color
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="heading">Heading</h2>
+
+    <button onclick="Changecolor()">Click</button>
+  </body>
+
+  <script>
+    let headings = document.getElementsByClassName("heading");
+    headings[0].textContent = "DOM Practice";
+
+    function Changecolor() {
+      document.body.style.backgroundColor = "black";
+    }
+  </script>
+</html>

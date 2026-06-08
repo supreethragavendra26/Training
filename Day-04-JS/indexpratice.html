@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Lister</title>
+
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      /* Container */
+      .container {
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      /* Header */
+      #main-header {
+        background-color: #008000;
+        padding: 20px 0;
+      }
+
+      #header-title {
+        color: white;
+        font-size: 2rem;
+      }
+
+      /* Main Section */
+      #main {
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .title {
+        margin-bottom: 20px;
+      }
+
+      /* Form */
+      form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+      }
+
+      input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        background-color: #222;
+        color: white;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #000;
+      }
+
+      /* List */
+      #items {
+        list-style: none;
+      }
+
+      .list-group-item {
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1 id="header-title">
+          Item Lister <span style="display: none">43</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="main">
+        <h2 class="title">Add Items</h2>
+
+        <form>
+          <input type="text" placeholder="Enter Item" />
+          <input type="submit" class="btn" value="Submit" />
+        </form>
+
+        <h2 class="title">Items</h2>
+
+        <ul id="items">
+          <li class="list-group-item">Item 1</li>
+          <li class="list-group-item">Item 2</li>
+          <li class="list-group-item">Item 3</li>
+          <li class="list-group-item">Item 4</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // examine the dom
+      // console.log(document);
+      // console.log(document.title);
+      // console.log(document.domain);
+      // document.title = "Changed from  dom ";
+
+      // console.log(document.forms);
+
+      //  getting ele by id
+
+      // console.log(document.getElementById("header-title"));
+      // let heading = document.getElementById("header-title");
+
+      // console.log(heading);
+      // // heading.textContent = "Hello";
+
+      // console.log(heading.textContent);
+      // console.log(heading.innerText);
+
+      // heading.style.border = "2px solid black";
+
+      // heading.style.color = "pink";
+
+      // let item = document.getElementsByClassName("list-group-item");
+
+      // // console.log(item);
+
+      // console.log(item[0]);
+
+      // for (let i = 0; i < item.length; i++) {
+      //   item[i].style.backgroundColor = "red";
+      // }
+
+      // Getting by tagname
+
+      // let li = document.getElementsByTagName("li");
+
+      // console.log(li);
+
+      let items = document.querySelector("#items");
+
+      console.log(items.childNodes);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function isLeap(year) {
+        if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+          console.log("Leap Year");
+        } else {
+          console.log("Not Leap Year");
+        }
+      }
+
+      isLeap(2024);
+
+      // 📌 Rules to determine a leap year
+
+      // A year is a leap year if it satisfies:
+
+      // Divisible by 4 → Leap year
+      // But if divisible by 100 → NOT a leap year
+      // Unless also divisible by 400 → Then it is a leap year
+      // ✔️ Examples
+      // 2024 → divisible by 4 → ✅ leap year
+      // 1900 → divisible by 100 but not 400 → ❌ not a leap year
+      // 2000 → divisible by 400 → ✅ leap year
+    </script>
+  </head>
+  <body></body>
+</html>
