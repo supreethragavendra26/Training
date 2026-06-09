@@ -1,0 +1,34 @@
+<!-- Exercise 1 (5 min)
+
+Create a <div> containing a <button>.
+Add click events to both.
+Click the button and observe the order of messages in the console.
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">click me</button>
+    </div>
+  </body>
+
+  <script>
+    const con = document.querySelector(".container");
+    const btn = document.querySelector(".btn");
+
+    con.addEventListener("click", (e) => {
+      console.log("container clicked");
+    });
+
+    btn.addEventListener("click", (e) => {
+      console.log("btn clicked");
+      event.stopPropagation();
+    });
+  </script>
+</html>

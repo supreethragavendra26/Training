@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var name = "a";
+      //   console.log(name);
+      //   name = "b";
+      //   console.log(name);
+      const event = new Promise((resolve, reject) => {
+        {
+          let name = "supreeth";
+          if (name == "supreeth") {
+            resolve();
+          } else {
+            reject();
+          }
+        }
+      });
+
+      event.then(() => {
+        console.log("welcome");
+      });
+
+      event.catch(() => {
+        console.log("Rejected");
+      });
+    </script>
+  </body>
+</html>

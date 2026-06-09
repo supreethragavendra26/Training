@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>jQuery Crash Course | Events</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <style>
+      body {
+        font-size: 17px;
+        font-family: arial;
+        background: #f4f4f4;
+        line-height: 1.5em;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px #000 solid;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>jQuery Crash Course | Events</h1>
+    </header>
+    <div id="container">
+      <h1 class="heading">Heading one</h1>
+
+      <p id="para1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+        minima in vero numquam eum voluptatem reprehenderit sequi earum nam,
+        quis quas ullam aperiam explicabo dignissimos
+        <span> sit amet facere autem ea? </span>
+      </p>
+
+      <h1 class="heading2">Heading two</h1>
+
+      <p id="para2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+        doloremque facere. Corrupti optio expedita accusamus aliquam, aperiam
+        minus enim modi.
+      </p>
+    </div>
+
+    <ul>
+      <li>item1</li>
+      <li>item1</li>
+      <li>item1</li>
+      <li>item1</li>
+    </ul>
+
+    <button class="btnhide">hide</button>
+
+    <button class="show">show</button>
+    <script>
+      $("h1.heading").hide();
+
+      $("span ").css("color", "red");
+
+      $("ul li:even").css("color", "blue");
+
+      $("ul li").css("list-style", "none");
+
+      $(".btnhide").on("click", function () {
+        $("#para1").hide();
+      });
+
+      $(".show").on("click", function () {
+        $("#para1").show();
+      });
+    </script>
+  </body>
+</html>

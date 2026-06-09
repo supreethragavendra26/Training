@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function hello(callback) {
+      //     console.log("Hello");
+      //     callback();
+      //   }
+
+      //   function goodbye() {
+      //     console.log("goodbye");
+      //   }
+
+      //   hello(goodbye);
+
+      function sum(callback, a, b) {
+        let res = a + b;
+        callback(res);
+      }
+
+      function display(res) {
+        console.log("The total is ->>>>>>>>>>>>>>>", { res });
+      }
+
+      sum(display, 10, 20);
+    </script>
+  </body>
+</html>
